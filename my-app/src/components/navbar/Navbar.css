@@ -1,0 +1,142 @@
+
+.navbar {
+  height: 50px;
+  background-color: #003B95;
+  display: flex;
+  justify-content: center;
+  @media  only screen and (max-width: 480px) {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+
+.Logo {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.logoIcon {
+  text-decoration: none;
+  height: 20px;
+  width: 20px;
+}
+
+.logo_Text {
+  font-weight: 800;
+}
+
+.avatar{
+  align-items: center;
+  display: flex;
+  top: -2px;
+  right: 10px;
+  @media only screen and (max-width: 480px){
+    position: absolute;
+    top: 3px;
+    right: 10px;
+  }
+
+}
+
+.avatar img{
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  display: flex;
+  border-radius: 50%;
+}
+
+.country{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.navItem{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.property{
+  font-weight: 700;
+}
+
+.counter {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.nItem{
+  position: relative;
+  @media  only screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+
+.user {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    top: 15px;
+}
+
+
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  @media only screen and (max-width: 480px){
+    display: flex;
+    margin-right: 5px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+  }
+}
+
+.navButton:hover {
+  background-color: #003B95;
+  color: white;
+  transition: 0.3s ease;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+

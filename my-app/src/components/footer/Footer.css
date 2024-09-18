@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  width: 1024px;
+  font-size: 12px;
+  @media only screen and (max-width: 480px){
+    width: 100%;
+    background-color: aliceblue;
+  }
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  @media only screen and (max-width:480px){
+    width: 50%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+}
+
+.fList {
+  list-style: none;
+  padding: 5px;
+  @media only screen and (max-width: 480px){
+    padding-left: 0;
+    
+  }
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+  @media only screen and (max-width: 480px){
+    margin-bottom: 5px;
+  }
+}

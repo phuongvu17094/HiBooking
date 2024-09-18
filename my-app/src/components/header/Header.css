@@ -1,0 +1,245 @@
+.header {
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/5cdb058a5218470008b0b00f/Nobu-Ryokan-Malibu/0x0.jpg?format=jpg&height=1009&width=2000");
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  height: 300px;
+  @media only screen and (max-width: 480px){
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+    padding: 0;
+  }
+}
+
+.headerContainer {
+  width: 100%;
+  margin: -20px 0 100px 0px;
+  max-width: 1024px;
+  @media only screen and (max-width: 480){
+    width: 100%;
+  }
+}
+
+.headerListMode {
+  display: none;
+}
+
+.headerList {
+  display: flex;
+  justify-content: center;
+  background-color: #003B95;
+  padding: 0 0 10px;
+  gap: 65px;
+  @media only screen and (max-width: 480px){
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+}
+
+.headerListItem  {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.headerListItem a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.headerListItem:hover {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: rgb(26,79,160);
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(26,79,160);
+}
+
+.headerDesc {
+  margin: 20px 0px;
+ @media only screen and (max-width: 480px){
+  margin: 3px;
+  color: whitesmoke;
+  font-size: small;
+ }
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0;
+  @media only screen and (max-width: 480px){
+   width: 70px;
+   position: absolute;
+   top: 15px;
+   right: 0;
+   border: none;
+   flex-direction: row;
+   
+  }
+}
+
+.headerBtn1{
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0;
+  @media only screen and (max-width:480px){
+    top: 45px;
+    right: 10px;
+    border: none;
+    flex-direction: row;
+   
+  }
+}
+
+.headerBtn:hover {
+  background-color: #003580;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1024px;
+  left: 235px;
+  @media only screen and (max-width: 480px){
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: flex-start;
+    left: 0;
+  }
+}
+
+.headerIcon {
+  color: gray;
+}
+
+.headerSearchText {
+  color: gray;
+  cursor: pointer;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media only screen and (max-width: 480px){
+    padding: 5px;
+    gap: 15px;
+  }
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  @media only screen and (max-width: 430px){
+    top: 80px;
+  }
+}
+
+.options {
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 00px 0px 10px -5px rgba(0, 0, 0.4);
+  position: absolute;
+  top: 50px;
+  color: gray;
+  z-index: 2;
+  background-color: white;
+
+}
+
+.header-wrap{
+  margin-left: 110px;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-wrap {
+    margin-left: 15px;
+  }
+  .options{
+    top: 110px;
+  }
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionCounter {
+  display: flex;
+  gap: 10px;
+  color: black;
+  font-size: 12px;
+  align-items: center;
+}
+
+.optionCounterBtn {
+  background-color: white;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #0071c2;
+  cursor: pointer;
+  border: 1px solid #0071c2;
+}
+
+.optionCounterBtn:disabled {
+  cursor: not-allowed;
+}
+
+.headerTitle{
+  font-size: 40px;
+  @media only screen and (max-width: 480px){
+    font-size: 25px;
+    color: #fff;
+    margin-top: -100px;
+    
+  }
+}

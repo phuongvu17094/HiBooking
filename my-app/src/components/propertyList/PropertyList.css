@@ -1,0 +1,38 @@
+.pList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1024px;
+  @media only screen and (max-width: 480px){
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.pListItem {
+  flex: 1;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pListImg {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pListTitles > h1 {
+  font-size: 18px;
+  margin: -5px 0 -15px 0;
+  color: #444;
+  text-transform: capitalize;
+}
+
+.pListTitles > h2 {
+  font-size: 14px;
+  font-weight: 400;
+}

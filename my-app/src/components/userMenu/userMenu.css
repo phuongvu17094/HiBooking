@@ -1,0 +1,23 @@
+.user-menu {
+    background: white;
+    color: black;
+    position: absolute;
+    width: 225px;
+    top: 55px;
+    right: 50px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.user-menu-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}

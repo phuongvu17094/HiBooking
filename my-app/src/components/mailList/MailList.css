@@ -1,0 +1,83 @@
+.mail {
+  width: 1024px;
+  background-color: #00224f;
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0 50px 0;
+  @media only screen and (max-width: 480px){
+   width: 100%;
+  }
+}
+
+.mailTitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+  @media only screen and (max-width: 480px){
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.mailDesc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #bdbdbd;
+  margin-left: 0;
+  text-align: center;
+  display: block;
+  float: none;
+}
+
+.mailInputContainer {
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 480px){
+    position: relative;
+  }
+}
+
+.mailInputContainer > input {
+  font-size: 20px;
+  line-height: 28px;
+  color: gray;
+  border-radius: 3px;
+  font-weight: 700;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  @media only screen and (max-width: 480px){
+    width: 200px;
+    left: 0;
+    height: 20px;
+  }
+}
+
+.mailInputContainer > button {
+  height: 50px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  @media only screen and (max-width: 480px){
+  height: 40px; 
+  width: 85px;
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  }
+}
